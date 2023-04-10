@@ -1,0 +1,3 @@
+The net.h file in the Bitcoin Core source code contains definitions for data structures, functions, and constants related to networking in the Bitcoin protocol. It includes components such as CNode (representing a node in the network), CAddress (representing a network address), AddrMan (managing a list of network addresses), and CConnman (managing network connections).
+
+Functions like RelayTransaction and ProcessMessage are responsible for relaying transactions and processing incoming messages from other nodes in the network. Overall, net.h plays a crucial role in defining the networking components used by Bitcoin Core to communicate with other nodes in the Bitcoin network
