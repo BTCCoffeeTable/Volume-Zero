@@ -1,0 +1,7 @@
+The libeay32.dll file is another library file that was included in the original Bitcoin codebase. This file is used by the Bitcoin software to provide cryptographic functions, such as encryption, decryption, and digital signature verification.
+
+Specifically, the libeay32.dll file provides an implementation of the OpenSSL library, which is a widely used open-source library for cryptographic functions. The Bitcoin software uses the OpenSSL library to perform various cryptographic operations, including the signing and verification of Bitcoin transactions and the generation and storage of Bitcoin private keys.
+
+The inclusion of the libeay32.dll file in the original Bitcoin codebase was necessary to ensure that the software could perform its cryptographic functions correctly and securely. Without this library file, the Bitcoin software would not be able to properly sign or verify transactions, which would render the entire system insecure and unreliable.
+
+Like the mingwm10.dll file, the libeay32.dll file is not specific to the Bitcoin software and is used by many other programs that require cryptographic functions. The file is open-source and is distributed under the terms of the OpenSSL License, which is a permissive license that allows for free use, modification, and distribution of the library.
