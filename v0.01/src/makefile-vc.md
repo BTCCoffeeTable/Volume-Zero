@@ -1,8 +1,9 @@
-The makefile.vc file is a makefile that is included in the original Bitcoin source code, and is used to compile the Bitcoin software on Microsoft Visual Studio (MSVC) on Windows operating system.
+The makefile.vc file in the Bitcoin v0.01 Alpha codebase is a makefile specifically designed for Microsoft Visual C++ (VC). Makefiles are a type of script used by the make build automation tool to compile and link programs.
 
-The makefile.vc file contains several rules for compiling the Bitcoin software, which include:
+This makefile contains instructions for how to build the Bitcoin software on a system with Visual C++. It includes paths to necessary libraries, compiler flags, and rules for building each component of the software.
 
-1. Compiling the source code: The makefile.vc file includes rules for compiling each source code file, including main.cpp, net.cpp, util.cpp, and many others.
-2. Linking object files: Once all of the source code files have been compiled, the makefile.vc file includes rules for linking the object files together into the final Bitcoin executable, which is called "bitcoin.exe".
-3. Defining compilation options: The makefile.vc file defines various compilation options that are used by the MSVC compiler, such as the include paths, linker options, and compiler flags.
-4. Generating dependencies: The makefile.vc file also includes rules for generating dependencies between source code files, which helps to ensure that the code is recompiled when a dependency changes.
+The file begins by setting up some conditions and variables for the build process. It then defines the paths to the necessary include files and libraries. Following this, it lists the libraries that need to be linked to the Bitcoin software.
+
+The makefile then defines a series of rules for building the Bitcoin software. Each rule specifies a target file that needs to be built, the source files that the target depends on, and the commands to run to build the target.
+
+This makefile provides a glimpse into the behind-the-scenes work that goes into building and maintaining a software project of this scale.
