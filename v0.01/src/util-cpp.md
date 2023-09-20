@@ -1,16 +1,5 @@
-The util.cpp file in the original Bitcoin source code contains various utility functions used throughout the Bitcoin Core software.
+The util.cpp file from Bitcoin v0.01 ALPHA contains utility functions and classes essential for the software's operation. It emphasizes initializing OpenSSL for multithreading, ensuring cryptographic functions are thread-safe.
 
-These functions are primarily used for common tasks such as string manipulation, byte manipulation, and cryptographic operations.
+The file also focuses on seeding the random number generator using diverse sources like screen scraping and performance counters, crucial for cryptographic security in Bitcoin's transactions and block creation. Additionally, it introduces safer string formatting functions to prevent buffer overflows and ensure proper string termination.
 
-Some of the key functions defined in util.cpp include:
-
-HexStr: Converts a byte array to its hexadecimal representation.
-ParseHex: Converts a hexadecimal string to a byte array.
-PrintHex: Prints a byte array in its hexadecimal representation.
-RandBytes: Generates a random byte array of a given size.
-DecodeBase58: Decodes a Base58-encoded string.
-EncodeBase58: Encodes a byte array into a Base58-encoded string.
-Hash256: Computes the SHA-256 hash of a byte array.
-Hash160: Computes the RIPEMD-160 hash of the SHA-256 hash of a byte array.
-
-These utility functions are used throughout the Bitcoin Core software for various purposes, such as encoding and decoding Bitcoin addresses, generating cryptographic keys, and computing transaction hashes.
+Error reporting and exception handling mechanisms are also present. Notably, the file contains time management functions aiming to synchronize the system clock with other Bitcoin network nodes, ensuring consistent timestamping across the decentralized system. In essence, util.cpp underpins the security, reliability, and synchronization of the early Bitcoin software.
