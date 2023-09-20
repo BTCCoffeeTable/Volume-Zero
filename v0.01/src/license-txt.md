@@ -1,1 +1,3 @@
-none
+The license.txt file in the src directory of the Bitcoin v0.01 ALPHA software is a testament to the open-source nature of Bitcoin. It contains the terms under which the Bitcoin software is distributed.
+The license grants permission to any person to deal with the software without restriction, including the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software. It also allows people to whom the software is furnished to do so, subject to the condition that the copyright notice and this permission notice shall be included in all copies or substantial portions of the software.
+This license is a testament to the ethos of openness and collaboration that underpins the Bitcoin project. It underscores the commitment of the Bitcoin community to making the software freely available and open to modification and improvement.
