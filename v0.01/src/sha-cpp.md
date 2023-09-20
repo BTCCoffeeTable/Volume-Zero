@@ -1,9 +1,6 @@
-The sha.cpp file in the original Bitcoin source code contains the implementation of the SHA-256 hash function, which is a critical component of the Bitcoin protocol.
+The SHA.cpp file is a critical component of the Bitcoin v0.01 Alpha project, containing the implementation of the Secure Hash Algorithm (SHA) in C++. 
+The SHA is a family of cryptographic hash functions that are fundamental to the security infrastructure of Bitcoin. They were designed by the National Security Agency (NSA) and are used in a multitude of security applications and protocols, including TLS and SSL, PGP, SSH, IPsec, and of course, Bitcoin.
 
-SHA-256 is a cryptographic hash function that is used to secure the Bitcoin blockchain and to verify the integrity of Bitcoin transactions.
+This file includes the implementation of different versions of the SHA algorithm, such as SHA1, SHA224, SHA256, SHA384, and SHA512. Each of these versions has a different hash length and is used for different purposes. The code includes the initialization of the hash state, the transformation functions, and the definitions of the bitwise operations used in the algorithm.
 
-The sha.cpp file contains the implementation of the SHA-256 algorithm, which takes an input message and generates a fixed-size output, or hash, that uniquely represents the input message. The SHA-256 algorithm works by dividing the input message into fixed-size blocks and performing a series of operations on each block to generate the final hash.
-
-The sha.cpp file defines several functions related to the SHA-256 hash function, including functions for initializing the hash state, processing input blocks, and generating the final hash value. It also includes functions for converting between different data formats, such as big-endian and little-endian, which are used in the SHA-256 algorithm.
-
-In addition to the SHA-256 hash function, the sha.cpp file also contains the implementation of other hash functions used in the Bitcoin protocol, such as RIPEMD-160, which is used in the calculation of Bitcoin addresses.
+The SHA algorithms are integral to the creation of Bitcoin addresses and the verification of transactions. They transform the input data into a condensed representation, known as a hash. This hash function is designed to be a one-way function, meaning that once data has been transformed into a hash, it cannot be reversed or decrypted. This is a fundamental aspect of the cryptographic security that underpins Bitcoin.

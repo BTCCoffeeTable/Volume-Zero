@@ -1,9 +1,5 @@
-The sha.h file in the original Bitcoin source code contains the header file for the SHA-256 hash function, which is a critical component of the Bitcoin protocol.
+The sha.h file is the header file for the Secure Hash Algorithm (SHA) implementation in the Bitcoin v0.01 Alpha codebase. It provides the function prototypes and definitions for the SHA cryptographic hash functions used in the Bitcoin project.
 
-SHA-256 is a cryptographic hash function that is used to secure the Bitcoin blockchain and to verify the integrity of Bitcoin transactions.
+The file includes definitions for different versions of the SHA algorithm, such as SHA1, SHA224, SHA256, and, when 64-bit word size is available, SHA512 and SHA384. Each of these versions has a different hash length and is used for different purposes. The file also includes the definition of several helper functions and macros used in the implementation of the SHA algorithms.
 
-The sha.h file defines various data structures and functions related to the SHA-256 hash function, including the CSHA256 class, which represents the SHA-256 hash algorithm. This class provides methods for initializing the hash state, processing input blocks, and generating the final hash value. It also includes methods for converting between different data formats, such as big-endian and little-endian, which are used in the SHA-256 algorithm.
-
-The sha.h file also includes constants and functions related to other hash functions used in the Bitcoin protocol, such as RIPEMD160, which is used in the calculation of Bitcoin addresses.
-
-The sha.h file is used extensively throughout the Bitcoin source code to perform SHA-256 and other hash calculations, which are essential for the security and integrity of the Bitcoin network. For example, when a Bitcoin transaction is broadcast to the network, the transaction data is hashed using the SHA-256 algorithm, and the resulting hash is included in the transaction data.
+The SHA algorithms are integral to the creation of Bitcoin addresses and the verification of transactions. They transform the input data into a condensed representation, known as a hash. This hash function is designed to be a one-way function, meaning that once data has been transformed into a hash, it cannot be reversed or decrypted. This is a fundamental aspect of the cryptographic security that underpins Bitcoin.
